@@ -1,6 +1,6 @@
 (function() {
   "use strict";
-  window.fib = function* genFib(max) {
+  function* fib(max) {
     let o = 0,
       f = 1,
       s = 1;
@@ -11,4 +11,13 @@
       yield o;
     }
   };
+
+
+    const   input = document.querySelector("input[type=number]").TEXT_NODE,
+    action = document.querySelector("button[name=submit]");
+    console.log(action.textContent);
+
+
+
+
 })();
